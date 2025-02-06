@@ -191,3 +191,32 @@ header .nav-desktop{
     margin: 16px 0 32px;
 }
 
+/* services section  */
+.services{
+    padding: 100px 0;
+}
+
+.services .container{
+    display: grid;
+    gap: 32px;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 750px){
+    .services .container{
+        grid-template-columns: 1fr;
+    }
+}
+
+.services .card{
+    max-width: 290px;
+}
+
+.services img{
+    transition: .3s transform;
+}
+
+.services img:hover{
+    transform: scale(.9);
+}
