@@ -85,6 +85,14 @@ header{
     right: 0;
     left: 0;
     z-index: 4;
+    transition-duration: .3s;
+    transition-property: padding background-color box-shadow;
+}
+header.sticky{
+    padding: 24px 0;
+    background-color: #dbdbdb2b;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 header .container{

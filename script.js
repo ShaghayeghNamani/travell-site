@@ -13,3 +13,10 @@ document.onclick = function(n){
         nav.classList.remove('active')
     }
 }
+
+// sticky navigation 
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', function(){
+    header.classList.toggle('sticky', scrollY > 0);
+})
