@@ -296,3 +296,27 @@ header .nav-desktop{
 .contact p{
     margin: 16px 0 32px;
 }
+
+/* footer */
+footer{
+    padding: 10px 0;
+}
+footer .container{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .to-top{
+    font-size: 2rem;
+    color: var(--clr-primary);
+    transition-duration: .3s;
+    transition-property: color transform;
+    
+}
+footer .to-top:is(:focus, :hover){
+    color: var(--clr-secondary);
+    transform: translateY(-5px);
+}
