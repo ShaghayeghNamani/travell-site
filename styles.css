@@ -269,3 +269,30 @@ header .nav-desktop{
     line-height: 2rem;
     max-width: 100rem;
 }
+
+/* contact us  */
+.contact{
+    padding: 150px 0 200px;
+    background-color: var(--clr-secondary);
+    background-image: url(image/call-to-action.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+.contact .container{
+    max-width: 530px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact h3{
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    color: var(--clr-primary);
+}
+.contact p{
+    margin: 16px 0 32px;
+}
