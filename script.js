@@ -8,7 +8,7 @@ hamburger.addEventListener('click', function(){
 
 // hide after click an item 
 document.onclick = function(n){
-    if(n.target.id !== 'icon' && n.target.id !== 'nav-mobile'){
+    if(n.target.id !== 'icon' && n.target.id !== '.nav-mobile'){
         hamburger.classList.remove('bx-x');
         nav.classList.remove('active')
     }

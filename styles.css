@@ -23,9 +23,8 @@ body {
 }
 
 :root {
-    --clr-primary: #2c541d;
-    --clr-secondary: #74a84a;
-  
+    --clr-primary: #00530b;
+    --clr-secondary: #50c938;
     --clr-white: #fefefe;
     --clr-black: #000000;
   }
@@ -103,7 +102,7 @@ header .container{
 }
 
 header .logo img{
-    width: 100px;
+    width: 50px;
 }
 
 header .right, 
@@ -173,7 +172,7 @@ header .nav-desktop{
     height: 100vh;
     padding-top: 260px;
     background-color: var(--clr-secondary);
-    background-image: url(image/banner.jpg);
+    background-image: url(image/banner.avif);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -204,6 +203,14 @@ header .nav-desktop{
     padding: 100px 0;
 }
 
+.services .s-title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
 .services .container{
     display: grid;
     gap: 32px;
@@ -218,10 +225,11 @@ header .nav-desktop{
 }
 
 .services .card{
-    max-width: 300px;
+    max-width: 370px;
 }
 
 .services img{
+    padding-bottom: 1rem;
     transition: .3s transform;
 }
 
@@ -240,13 +248,6 @@ header .nav-desktop{
     gap: 32px;
     align-items: center;
     justify-content: space-between;
-}
-
-@media screen and (max-width: 850px){
-    .about .container{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 }
 
 .about .content{
@@ -270,11 +271,24 @@ header .nav-desktop{
     max-width: 100rem;
 }
 
+@media screen and (max-width: 850px){
+    .about .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about{
+        padding-top: 30px;
+    }
+    .about h3{
+        text-align: center;
+    }
+}
+
 /* contact us  */
 .contact{
     padding: 150px 0 200px;
     background-color: var(--clr-secondary);
-    background-image: url(image/call-to-action.jpg);
+    background-image: url(image/contact\ us.avif);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -311,12 +325,12 @@ footer .container{
 
 footer .to-top{
     font-size: 2rem;
-    color: var(--clr-primary);
+    color: var(--clr-secondary);
     transition-duration: .3s;
     transition-property: color transform;
     
 }
 footer .to-top:is(:focus, :hover){
-    color: var(--clr-secondary);
+    color: var(--clr-primary);
     transform: translateY(-5px);
 }
